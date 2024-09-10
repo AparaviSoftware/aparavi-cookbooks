@@ -1,6 +1,6 @@
 # AssitantGPT🤖 - A Customer Support Chatbot powered by Aparavi Software
 
-![diagram](https://raw.githubusercontent.com/jeffvestal/ElasticDocs_GPT/main/images/ElasticChat%20GPT%20Diagram%20-%20No%20line%20text.jpeg)
+![diagram](https://github.com/AparaviSoftware/aparavi-cookbooks/blob/main/AssistantGpt/images/CoverImage.jpg)
 
 Assistify is an AI-powered chatbot designed to assist customers by providing relevant responses using a vector database and pre-trained models. This repository includes a full implementation of the chatbot, leveraging OpenAI's GPT-3.5-turbo, Langchain, and a Milvus vector database for fast information retrieval.
 Features
