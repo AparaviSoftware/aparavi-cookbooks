@@ -1,6 +1,6 @@
 # Aparavi Cookbooks
 
-Welcome to the Aparavi Cookbooks repository! Here, you'll find a selection of example projects that demonstrate how to integrate Aparavi into your personal GenAI projects. Whether you're just starting or looking to enhance your professional AI development, these cookbooks will guide you in utilizing Aparavi software to streamline data ingestion and power your projects with relevant, proprietary data.
+Welcome to the Aparavi Cookbooks repository! Here, you'll find a selection of example projects that demonstrate how to integrate Aparavi into your personal GenAI projects. Whether you're just starting or looking to enhance your professional AI development, these cookbooks will guide you in utilizing Aparavi software to streamline data ingestion and power your projects with relevant, proprietary data. [Go to Getting Started](#getting-started-with-aparavi-ai-software)
 
 **Goal**
 
@@ -42,7 +42,9 @@ Aparavi provides two key AI pipelines for developers:
 
 ![Aparavi Architecture](/images/AparaviVectorDbLoader.png)
 
+### Getting started with Aparavi AI Software
 
+To set up Aparavi using Docker Compose, [follow the instructions here](https://github.com/AparaviSoftware/aparavi-platform-compose/blob/main/README.md).
 
 
 
