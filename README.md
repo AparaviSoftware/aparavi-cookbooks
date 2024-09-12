@@ -38,9 +38,14 @@ Aparavi provides two key AI pipelines for developers:
 
 ![Aparavi Architecture](/images/AparaviSemanticRetriever.png)
 
+To learn how the semantic search endpoint works, check out this [notebook](https://github.com/AparaviSoftware/langchain-retriever), which demonstrates how to implement it using Aparavi's Langchain retriever.
+
 2. **Vector Database Loader**: This pipeline enables the loading of embedding vectors into a vector database of your choice, optimizing data retrieval and AI model performance. It also allows developers to seamlessly continue with projects they might have already started, integrating existing data into Aparavi’s platform.
 
 ![Aparavi Architecture](/images/AparaviVectorDbLoader.png)
+
+For an example project using the Vector Database Loader with AssistantGPT and Milvus as the vector database, check out this [repository](https://github.com/AparaviSoftware/aparavi-cookbooks/tree/main/AssistantGpt).
+
 
 ### Getting started with Aparavi AI Software
 
