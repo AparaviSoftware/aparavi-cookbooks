@@ -16,12 +16,17 @@ Aparavi is a data-native solution that seamlessly connects to a wide variety of 
 
 ![Aparavi Architecture](/images/AparaviArchitecture.png)
 
-**Aparavi & AI**
+*Aparavi AI*
 
 For AI developers, Aparavi also acts as an essential pipeline for your data, enabling RAG (Retrieval-Augmented Generation) in your AI agents. With the example projects provided in this repository, you'll learn how to:
-1. **Query against your unstructured data** to enhance your AI models
-2. **Ingest data** seamlessly into your AI pipelines
+1. **Ingest data** seamlessly from all kind of sources into your AI pipelines 
+2. **Query against your unstructured data** to enhance your AI models
 3. **Automate policy enforcement** while developing AI-driven solutions
+4. **Enable permissions** for all users in your organisation
 
 Each project includes step-by-step instructions, code snippets, and best practices to help you make the most out of Aparavi for your GenAI initiatives.
+
+
+
+
 
