@@ -14,6 +14,8 @@ Aparavi is a data-native solution that seamlessly connects to a wide variety of 
 - Enforce organizational policies
 - Identify and mitigate compliance risks
 
+![Project Structure](./images/AparaviArchitecture.png)
+
 **Aparavi & AI**
 
 For AI developers, Aparavi also acts as an essential pipeline for your data, enabling RAG (Retrieval-Augmented Generation) in your AI agents. With the example projects provided in this repository, you'll learn how to:
