@@ -25,14 +25,24 @@ For AI developers, Aparavi also acts as an essential pipeline for your data, ena
 4. **Enable permissions** for all users in your organisation
 5. **Identify PII** through all your data
 
-![Aparavi Architecture](/images/AparaviAiCapabilities.png)
+![Aparavi AI Capabilities](/images/AparaviAiCapabilities.png)
 
 
 Each project includes step-by-step instructions, code snippets, and best practices to help you make the most out of Aparavi for your GenAI initiatives.
 
-Aparavi offers two major Ai pipelines for developers: 
+### Aparavi AI Pipelines for Developers
 
-*Taking*
+Aparavi provides two key AI pipelines for developers:
+
+1. **RAG as a Service**: This service offers developers a semantic search endpoint, allowing them to query data and retrieve relevant text chunks efficiently from sources that have been previously processed by Aparavi and loaded into our in-house vector database.
+
+![Aparavi Architecture](/images/AparaviSemanticRetriever.png)
+
+2. **Vector Database Loader**: This pipeline enables the loading of embedding vectors into a vector database of your choice, optimizing data retrieval and AI model performance. It also allows developers to seamlessly continue with projects they might have already started, integrating existing data into Aparavi’s platform.
+
+![Aparavi Architecture](/images/AparaviVectorDbLoader.png)
+
+
 
 
 
