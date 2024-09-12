@@ -14,7 +14,7 @@ Aparavi is a data-native solution that seamlessly connects to a wide variety of 
 - Enforce organizational policies
 - Identify and mitigate compliance risks
 
-![Project Structure](./images/AparaviArchitecture.png)
+![Aparavi Architecture](/images/AparaviArchitecture.png)
 
 **Aparavi & AI**
 
