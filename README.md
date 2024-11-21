@@ -51,5 +51,14 @@ For an example project using the Vector Database Loader with AssistantGPT and Mi
 
 To set up Aparavi using Docker Compose, [follow the instructions here](https://github.com/AparaviSoftware/aparavi-platform-compose/blob/main/README.md).
 
+In this reopistory we have the follwing cookbooks already for you to make you git the ground running
+
+1. aparavi assistnat gpt 
+this what it doses balblalbl
+
+2. ....
+
+3. ....  
+
 
 
