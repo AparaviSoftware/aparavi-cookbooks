@@ -11,7 +11,7 @@ from qdrant_client import QdrantClient, models
 
 ######## ENTER YOUR QDRANT API KEY HERE ########
 
-connect to Qdrant
+#connect to Qdrant
 Qdrantclient = QdrantClient(
     url="<YOUR_QDRANT_URL>", 
     api_key="<YOUR_QDRANT_API_KEY>",
@@ -19,15 +19,15 @@ Qdrantclient = QdrantClient(
 
 
 # import graphics
-titleLogoHult = Image.open("../graphics/hultLogo.png")
-nAibleLogo    = Image.open("../graphics/nAibleLogo.png")
-AparaviLogo   = Image.open("../graphics/logoAparaviDarkMode.png")
+titleLogoHult = Image.open("graphics/hultLogo.png")
+nAibleLogo    = Image.open("graphics/nAibleLogo.png")
+AparaviLogo   = Image.open("graphics/logoAparaviDarkMode.png")
 
 # place title graphic
 st.image(titleLogoHult)  
 
 # hult logo
-BOT_AVATAR = r"../graphics/hultIconDark.png" 
+BOT_AVATAR = r"graphics/hultIconDark.png" 
 st.markdown("<h1 style='text-align: center;'>Tech Ambassador AI Agent</h1>", unsafe_allow_html=True) 
 
 # initialize the retriever and the embedding model
