@@ -1,0 +1,12 @@
+Uzz3wPmQiwJMa8OFUVTey_VGrSR4KMnRQWaDClMV9q2fmzxWpHYWOw
+qdrant api
+
+
+from qdrant_client import QdrantClient
+
+qdrant_client = QdrantClient(
+    url="https://578b0938-4d9d-4987-aa93-610401f4f621.europe-west3-0.gcp.cloud.qdrant.io:6333", 
+    api_key="Uzz3wPmQiwJMa8OFUVTey_VGrSR4KMnRQWaDClMV9q2fmzxWpHYWOw",
+)
+
+print(qdrant_client.get_collections())
