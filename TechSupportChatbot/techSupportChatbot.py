@@ -1,10 +1,9 @@
 from openai import OpenAI
 import streamlit as st
 import shelve
-from PIL import Image
 from qdrant_client import QdrantClient
 
-# need to install openai dotenv streamlit
+# Required packages: pip install openai streamlit qdrant-client
 
 qdrant_client = QdrantClient(
     url="<YOUR-QDRANT-URL>", 
@@ -12,11 +11,7 @@ qdrant_client = QdrantClient(
 )
 
 # images and text
-logoHult    = Image.open("images/hultLogo.png")
-nAibleLogo  = Image.open("images/nAibleLogo.png")
-AparaviLogo = Image.open("images/logoAparaviDarkMode.png")
-
-st.image(logoHult)
+st.image("images/hultLogo.png")
 
 BOT_AVATAR = "images/iconhult2.png" #S"👩‍💻🦾"  
 st.markdown("<h1 style='text-align: center;'>Tech Ambassador AI Agent</h1>", unsafe_allow_html=True) 
@@ -61,12 +56,12 @@ with st.sidebar:
     st.write("Designed by")
 
     # Insert the nAible logo
-    st.image(nAibleLogo)  
+    st.image("images/nAibleLogo.png")  
 
     st.write("Powered by")
 
     # Insert the Aparavi logo
-    st.image(AparaviLogo)
+    st.image("images/logoAparaviDarkMode.png")
 
 
 # Password protection
