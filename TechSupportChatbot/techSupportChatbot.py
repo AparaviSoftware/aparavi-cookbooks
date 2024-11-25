@@ -11,7 +11,7 @@ qdrant_client = QdrantClient(
 )
 
 # images and text
-st.image("images/hultLogo.png")
+st.image("images//hultLogo.png")
 
 BOT_AVATAR = "images/iconhult2.png" #S"👩‍💻🦾"  
 st.markdown("<h1 style='text-align: center;'>Tech Ambassador AI Agent</h1>", unsafe_allow_html=True) 
@@ -57,6 +57,11 @@ with st.sidebar:
 
     # Insert the nAible logo
     st.image("images/nAibleLogo.png")  
+
+    st.write("Supported by")
+
+    # Insert the nAible logo
+    st.image("images/hultAiSociety.png")  
 
     st.write("Powered by")
 
