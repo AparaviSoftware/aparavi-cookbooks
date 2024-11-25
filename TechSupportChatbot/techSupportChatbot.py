@@ -28,21 +28,9 @@ if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-4o"
 
 
-# Load chat history from shelve file
-def load_chat_history():
-    with shelve.open("chat_history") as db:
-        return db.get("messages", [])
-
-
-# Save chat history to shelve file
-def save_chat_history(messages):
-    with shelve.open("chat_history") as db:
-        db["messages"] = messages
-
-
+# Initialize session state for messages if not already present
 if "messages" not in st.session_state:
-    st.session_state.messages = load_chat_history()
-
+    st.session_state.messages = []  # Start with empty messages for each new session
 
 # Initialize the sidebar
 with st.sidebar:
@@ -51,7 +39,7 @@ with st.sidebar:
     # Button to delete chat history
     if st.button("Delete Chat History"):
         st.session_state.messages = []
-        save_chat_history([])
+        #save_chat_history([])
 
     st.write("Designed by")
 
@@ -68,6 +56,9 @@ with st.sidebar:
     # Insert the Aparavi logo
     st.image("images/logoAparaviDarkMode.png")
 
+    # Clear chat history button
+    if st.button("Clear Chat History"):
+        st.session_state.messages = []
 
 # Password protection
 def check_password():
@@ -183,6 +174,6 @@ if check_password():
         st.session_state.messages.append({"role": "assistant", "content": full_response})
 
     # Step 6: Save chat history after each interaction
-    save_chat_history(st.session_state.messages)
+    #save_chat_history(st.session_state.messages)
 
     # Save chat history after each interaction
