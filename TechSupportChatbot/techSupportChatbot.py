@@ -16,6 +16,26 @@ st.image("images//hultLogo.png")
 BOT_AVATAR = "images/iconhult2.png" #S"👩‍💻🦾"  
 st.markdown("<h1 style='text-align: center;'>Tech Ambassador AI Agent</h1>", unsafe_allow_html=True) 
 
+# Quick start prompts in main area
+st.write("Welcome! I'm your Tech Ambassador AI Assistant, powered by Hult's comprehensive tech knowledge base. I can help you with everything from account logins to Turnitin submissions. Need a starting point?")
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    if st.button("❓ How can you help me?", key="main_help"):
+        prompt = "Tell me what you can help me with"
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        
+with col2:
+    if st.button("🔑 MyHult Password Reset", key="main_password"):
+        prompt = "I forgot my MyHult password"
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        
+with col3:
+    if st.button("📶 WiFi Password", key="main_wifi"):
+        prompt = "What's the WiFi password?"
+        st.session_state.messages.append({"role": "user", "content": prompt})
+
+st.write("---")  # Divider
 
 # Set your OpenAI API key
 OPENAI_API_KEY = "<YOUR-OPENAI-API-KEY>"
@@ -41,6 +61,15 @@ with st.sidebar:
         st.session_state.messages = []
         #save_chat_history([])
 
+    # Quick start prompts section
+    st.write("---")  # Divider
+
+    # Feedback form section
+    st.write("Help us improve!")
+    st.link_button("Submit Feedback or Report Issues", "https://forms.gle/mhotxfCSzDDv6YZ36")
+    
+    st.write("---")  # Divider
+
     st.write("Designed by")
 
     # Insert the nAible logo
@@ -56,9 +85,7 @@ with st.sidebar:
     # Insert the Aparavi logo
     st.image("images/logoAparaviDarkMode.png")
 
-    # Clear chat history button
-    if st.button("Clear Chat History"):
-        st.session_state.messages = []
+
 
 # Password protection
 def check_password():
